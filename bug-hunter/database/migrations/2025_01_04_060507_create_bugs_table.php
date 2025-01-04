@@ -4,9 +4,9 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriesTable extends Migration
+class CreateBugsTable extends Migration
 {
-    private const TABLE = 'categories';
+    private const TABLE = 'bugs';
 
     /**
      * Run the migrations.
@@ -17,8 +17,17 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create(self::TABLE, static function (Blueprint $table): void {
             $table->id();
-            $table->string('name');
+            $table->string('title');
+            $table->text('description');
+            $table->foreignId('category_id');
+            $table->string('severity');
+            $table->string('status');
+            $table->longText('solution')->nullable();
+            $table->dateTime('raised_at');
+            $table->dateTime('resolved_at');
             $table->timestamps();
+
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
