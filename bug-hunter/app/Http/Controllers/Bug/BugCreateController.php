@@ -47,7 +47,7 @@ class BugCreateController extends Controller
         );
 
         $bug = $this->bugRepository->create($createDto, $category);
-
+        
         return new JsonResponse($bug->toArray(), Response::HTTP_CREATED);
     }
 }
