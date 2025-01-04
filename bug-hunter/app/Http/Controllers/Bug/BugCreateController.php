@@ -18,9 +18,9 @@ class BugCreateController extends Controller
         $this->categoryRepository = $categoryRepository;
     }
 
-    public function create(BugCreateRequest $request, string $id): JsonResponse
+    public function create(BugCreateRequest $request, int $id): JsonResponse
     {
-        $category = $this->categoryRepository->
+        $category = $this->categoryRepository->findOneById($id);
         return new JsonResponse();
     }
 }
