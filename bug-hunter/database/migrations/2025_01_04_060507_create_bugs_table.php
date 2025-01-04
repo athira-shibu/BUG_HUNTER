@@ -24,7 +24,7 @@ class CreateBugsTable extends Migration
             $table->string('status');
             $table->longText('solution')->nullable();
             $table->dateTime('raised_at');
-            $table->dateTime('resolved_at');
+            $table->dateTime('resolved_at')->nullable();
             $table->timestamps();
 
             $table->foreign('category_id')->references('id')->on('categories');
