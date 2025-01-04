@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Category\CategoryCreateController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group([
+    'prefix' => 'categories',
+    'as' => 'categories.'
+], static function () {
+    Route::post('/', [CategoryCreateController::class, 'create']);
 });
