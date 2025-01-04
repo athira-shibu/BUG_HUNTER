@@ -20,4 +20,16 @@ class Bug extends Model
     {
         return $this->getRelationValue('category');
     }
+
+    public function toArray(): array
+    {
+        return [
+            'id' => $this->getAttribute('id'),
+            'title' => $this->getAttribute('title'),
+            'description' => $this->getAttribute('description'),
+            'status' => $this->getAttribute('status'),
+            'severity' => $this->getAttribute('severity'),
+            'raised_at' => $this->getAttribute('severity')
+        ];
+    }
 }
