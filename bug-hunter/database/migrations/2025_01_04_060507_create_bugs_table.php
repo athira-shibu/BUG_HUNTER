@@ -18,7 +18,7 @@ class CreateBugsTable extends Migration
         Schema::create(self::TABLE, static function (Blueprint $table): void {
             $table->id();
             $table->string('title');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->foreignId('category_id');
             $table->string('severity');
             $table->string('status');
