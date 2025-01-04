@@ -5,6 +5,12 @@ namespace App\Models\Category;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @mixin \Illuminate\Database\Eloquent\Builder
+ * 
+ * @property string $name
+ */
+
 class Category extends Model
 {
     protected $fillable = ['name'];

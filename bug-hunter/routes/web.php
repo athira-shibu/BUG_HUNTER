@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Bug\BugCreateController;
 use App\Http\Controllers\Category\CategoryCreateController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,11 @@ Route::group([
     'as' => 'categories.'
 ], static function () {
     Route::post('/', [CategoryCreateController::class, 'create']);
+});
+
+Route::group([
+    'prefix' => 'bugs',
+    'as' => 'bugs.'
+], static function () {
+    Route::post('/', [BugCreateController::class, 'create']);
 });

@@ -7,4 +7,6 @@ use App\Models\Category\Category;
 interface CategoryRepositoryInterface
 {
     public function create(string $name): Category;
+
+    public function findOneById(int $id): ?Category;
 }

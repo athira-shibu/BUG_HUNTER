@@ -17,4 +17,11 @@ final class CategoryRepository implements CategoryRepositoryInterface
 
         return $category;
     }
+
+    public function findOneById(int $id): ?Category
+    {
+        return (new Category())
+            ->where('id', '=', $id)
+            ->first();
+    }
 }
