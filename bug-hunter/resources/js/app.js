@@ -6,8 +6,8 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import BugCreationForm from './components/BugCreationForm.vue';
+app.component('bug-creation-form', BugCreationForm);
 
 
 

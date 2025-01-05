@@ -27,7 +27,7 @@
     <body class="antialiased">
         <div id="app">
             <!-- Vue components rendered here -->
-            <example-component />
+            <bug-creation-form />
         </div>
 
 
