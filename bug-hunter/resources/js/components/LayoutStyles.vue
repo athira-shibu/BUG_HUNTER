@@ -15,8 +15,8 @@ export default {
 
 <style scoped>
 .page-layout {
-    margin-top: 200px;
-    padding: 0 20px;
+    margin-top: 20px;
+    padding: 20px 20px;
     background-color: black !important;
     color: red;
     font-weight: bold;
