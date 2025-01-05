@@ -32,3 +32,7 @@ Route::group([
 ], static function () {
     Route::post('/{id}', [BugCreateController::class, 'create']);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
