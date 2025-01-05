@@ -24,10 +24,13 @@
         @vite(['resources/js/app.js', 'resources/css/app.css'])
 
     </head>
-    <body class="antialiased">
+    <body class="antialiased page-layout">
         <div id="app">
+            <layout-styles>
             <!-- Vue components rendered here -->
             <bug-creation-form />
+            </layout-styles>
+            <!-- <layout-styles /> -->
         </div>
     </body>
 </html>

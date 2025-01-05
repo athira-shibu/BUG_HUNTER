@@ -12,7 +12,10 @@ app.use(VueAxios, axios)
 
 
 import BugCreationForm from './components/BugCreationForm.vue';
+import LayoutStyles from './components/LayoutStyles.vue';
+
 app.component('bug-creation-form', BugCreationForm);
+app.component('layout-styles', LayoutStyles);
 
 
 

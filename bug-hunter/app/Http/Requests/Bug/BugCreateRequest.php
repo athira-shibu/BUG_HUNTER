@@ -29,7 +29,7 @@ final class BugCreateRequest extends FormRequest
             'severity' => ['string', 'required', Rule::in(BugSeverityEnum::values())],
             'status' =>['string', 'required', Rule::in(BugStatusEnum::values())],
             'raised_at' => 'date|required',
-            'category' => 'nullable|string',
+            'category' => 'nullable|int',
         ];
     }
 }
