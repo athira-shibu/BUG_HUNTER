@@ -27,7 +27,7 @@ final class BugCreateControllerTest extends TestCase
             'raised_at' => (new DateTime('2023-10-10 10:10:00'))->format('Y-m-d H:i:s')
         ];
 
-        $uri = \sprintf('%s/%s', self::URI, $category->id);
+        $uri = \sprintf('%s/%s', self::URI);
 
         $response = $this->json('POST', $uri, $data);
 

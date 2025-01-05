@@ -29,8 +29,5 @@
             <!-- Vue components rendered here -->
             <bug-creation-form />
         </div>
-
-
-        <!-- <script src="{{asset('js/app.js')}}" defer></script> -->
     </body>
 </html>

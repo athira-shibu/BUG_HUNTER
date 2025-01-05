@@ -31,5 +31,5 @@ Route::group([
     'prefix' => 'bugs',
     'as' => 'bugs.'
 ], static function () {
-    Route::post('/{id}', [BugCreateController::class, 'create']);
+    Route::post('/', [BugCreateController::class, 'create']);
 });

@@ -30,9 +30,9 @@ class BugCreateController extends Controller
         $this->bugRepository = $bugRepository;
     }
 
-    public function create(BugCreateRequest $request, int $id): JsonResponse
+    public function create(BugCreateRequest $request): JsonResponse
     {
-        $category = $this->categoryRepository->findOneById($id);
+        $category = $this->categoryRepository->findOneById($request->get('category'));
 
         if ($category instanceof Category ===false) {
             throw new CategoryNotFoundException('category not found.');
