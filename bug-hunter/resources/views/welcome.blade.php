@@ -26,11 +26,23 @@
     </head>
     <body class="antialiased page-layout">
         <div id="app">
-            <layout-styles>
+            <!-- Button to trigger the form display -->
+             <button type="button" onclick="showForm()">Report Bug</button>
+
+            <p id="demo"></p>
+            <!-- <layout-styles> -->
+                <div id="bug-form" style="display:none">
+                    <bug-creation-form />
+                </div>
             <!-- Vue components rendered here -->
-            <bug-creation-form />
-            </layout-styles>
+            
+            <!-- </layout-styles> -->
             <!-- <layout-styles /> -->
         </div>
+        <script>
+            function showForm() {
+                document.getElementById('bug-form').style.display="block";
+            }
+        </script>
     </body>
 </html>
