@@ -18,7 +18,5 @@ export default {
     margin-top: 20px;
     padding: 20px 20px;
     background-color: black !important;
-    color: red;
-    font-weight: bold;
 }
 </style>
