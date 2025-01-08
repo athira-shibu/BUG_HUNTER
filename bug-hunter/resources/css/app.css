@@ -41,8 +41,7 @@ body {
 }
 
 .headings {
-    margin-top: -100px;
-    margin-bottom: 20px;
+    margin-top: -20px;
     font-weight: bold;
     color: green;
     text-align: center;
@@ -57,4 +56,50 @@ form {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form button:hover {
+    background-color: #28a745;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form button {
+    background-color: green;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: gainsboro;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
 }
