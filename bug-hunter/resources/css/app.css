@@ -27,3 +27,15 @@ body {
     align-items: center;
     height: 80vh;
 }
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+}
