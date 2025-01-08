@@ -39,6 +39,7 @@
             
             <!-- </layout-styles> -->
             <!-- <layout-styles /> -->
+            <footer-component />
         </div>
         <script>
             function showForm() {
