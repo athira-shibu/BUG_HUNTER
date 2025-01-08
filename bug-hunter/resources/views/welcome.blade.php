@@ -26,14 +26,15 @@
     </head>
     <body class="antialiased page-layout">
         <div id="app">
-            <!-- Button to trigger the form display -->
-             <button type="button" class="buttons" onclick="showForm()">Report Bug</button>
+            <div class="center-component">
+                <button type="button" class="buttons" onclick="showForm()">Report Bug</button>
 
-            <p id="demo"></p>
-            <!-- <layout-styles> -->
-                <div id="bug-form" style="display:none">
-                    <bug-creation-form />
-                </div>
+                <p id="demo"></p>
+                <!-- <layout-styles> -->
+                    <div id="bug-form" style="display:none">
+                        <bug-creation-form />
+                    </div>
+            </div>
             <!-- Vue components rendered here -->
             
             <!-- </layout-styles> -->
