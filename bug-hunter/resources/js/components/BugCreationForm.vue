@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="card-header">Report your bug here....</div>
+        <div class="headings">Report your bug here....</div>
         <form @submit.prevent="submitForm">
             <!-- Title -->
             <div>
