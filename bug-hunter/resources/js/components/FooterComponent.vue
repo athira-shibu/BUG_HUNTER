@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <p>&copy; 2025 @athira. All Rights Reserved.</p>
+        <p>&copy; 2025 by athira. All Rights Reserved.</p>
     </footer>
 </template>
 
