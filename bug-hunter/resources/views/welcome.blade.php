@@ -27,7 +27,7 @@
     <body class="antialiased page-layout">
         <div id="app">
             <!-- Button to trigger the form display -->
-             <button type="button" onclick="showForm()">Report Bug</button>
+             <button type="button" class="buttons" onclick="showForm()">Report Bug</button>
 
             <p id="demo"></p>
             <!-- <layout-styles> -->
