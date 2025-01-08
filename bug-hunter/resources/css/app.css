@@ -42,8 +42,19 @@ body {
 
 .headings {
     margin-top: -100px;
+    margin-bottom: 20px;
     font-weight: bold;
     color: green;
     text-align: center;
     font-size: 1.2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
