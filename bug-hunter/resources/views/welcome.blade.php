@@ -27,7 +27,7 @@
     <body class="antialiased page-layout">
         <div id="app">
             <div class="center-component">
-                <button type="button" class="buttons" onclick="showForm()">Report Bug</button>
+                <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>
 
                 <p id="demo"></p>
                 <!-- <layout-styles> -->
@@ -43,6 +43,7 @@
         <script>
             function showForm() {
                 document.getElementById('bug-form').style.display="block";
+                document.getElementById('bug-button').style.display="none";
             }
         </script>
     </body>
