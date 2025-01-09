@@ -25,6 +25,11 @@
 
     </head>
     <body>
+        <div id="intro" class="hero">
+            <h1>Welcome to Bug Tracker</h1>
+            <p>Your ultimate solution for managing bugs efficiently.</p>
+            <button onclick="navigateToForm()">Get Started</button>
+        </div>
         <div class="main-content">
             <div id="app">
                 <div>
@@ -50,6 +55,7 @@
             function showForm() {
                 document.getElementById('bug-form').style.display="block";
                 document.getElementById('bug-button').style.display="none";
+                document.getElementById('intro').style.display="none";
             }
         </script>
     </body>
