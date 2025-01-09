@@ -1,9 +1,15 @@
 body {
     background-color: white;
     color: #333333;
-    padding: 20px 600px;
+    padding: 35px;
+    margin: 0;
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
+    overflow-y: auto;
+}
+
+html, body {
+    overflow-y: auto;
 }
 
 .buttons {
@@ -45,11 +51,13 @@ body {
     color: green;
     text-align: center;
     font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin: 30px auto;
 }
 
 /* form styles */
 form {
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;

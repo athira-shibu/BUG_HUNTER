@@ -24,7 +24,7 @@
         @vite(['resources/js/app.js', 'resources/css/app.css'])
 
     </head>
-    <body class="antialiased page-layout">
+    <body>
         <div id="app">
             <div class="center-component">
                 <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>

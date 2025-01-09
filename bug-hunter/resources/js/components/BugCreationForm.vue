@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="headings">Report your bug here....</div>
+    <div>
+        <p class="headings">Report your bug here....</p>
         <form @submit.prevent="submitForm">
             <!-- Title -->
             <div>
