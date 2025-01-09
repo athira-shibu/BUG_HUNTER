@@ -26,6 +26,9 @@
     </head>
     <body>
         <div id="app">
+            <div>
+                <sidebar-component> />
+            </div>
             <div class="center-component">
                 <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>
 

@@ -14,11 +14,12 @@ app.use(VueAxios, axios)
 import BugCreationForm from './components/BugCreationForm.vue';
 import LayoutStyles from './components/LayoutStyles.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import SidebarComponent from './components/SidebarComponent.vue';
 
 app.component('bug-creation-form', BugCreationForm);
 app.component('layout-styles', LayoutStyles);
 app.component('footer-component', FooterComponent);
-
+app.component('sidebar-component', SidebarComponent);
 
 
 app.mount('#app');
