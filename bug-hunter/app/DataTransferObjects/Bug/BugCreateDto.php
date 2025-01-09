@@ -11,7 +11,7 @@ final class BugCreateDto
 {
     private string $title;
 
-    private array $description;
+    private string $description;
 
     private BugSeverityEnum $severity;
 
@@ -19,15 +19,15 @@ final class BugCreateDto
 
     private DateTime $raisedAt;
 
-    private ?array $solution;
+    private ?string $solution;
 
     public function __construct(
         string $title,
-        array $description,
+        string $description,
         BugSeverityEnum $severity,
         BugStatusEnum $status,
         DateTime $raisedAt,
-        ?array $solution = null,
+        ?string $solution = null,
     ) {
         $this->title = $title;
         $this->description = $description;
@@ -42,7 +42,7 @@ final class BugCreateDto
         return $this->title;
     }
 
-    public function getDescription(): array
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -62,7 +62,7 @@ final class BugCreateDto
         return $this->raisedAt;
     }
 
-    public function getSolution(): ?array
+    public function getSolution(): ?string
     {
         return $this->solution;
     }

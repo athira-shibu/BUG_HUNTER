@@ -31,11 +31,12 @@
             <!-- Raised At -->
             <div>
                 <label for="raised_at">Raised At</label>
-                <input type="datetime-local" v-model="bug.raised_at" id="raised_at" required />
+                <input type="date" v-model="bug.raised_at" id="raised_at" required />
             </div>
 
             <div>
                 <label for="solution">Solution</label>
+                <textarea v-model="bug.solution" id="solution"></textarea>
             </div>
 
             <!-- Submit Button -->
@@ -53,11 +54,12 @@ export default {
         return {
             bug: {
                 title: '',
-                description: [],  
+                description: '',  
                 category: 1,
                 raised_at: '',
                 severity: 'high',  
-                status: 'open',    
+                status: 'open', 
+                solution: ''  
             },
             api: 'http://localhost:8000/api/bugs'
         };
@@ -65,10 +67,6 @@ export default {
 
     methods: {
         submitForm() {
-            if (typeof this.bug.description === 'string') {
-                this.bug.description = this.bug.description.split('\n');
-            }
-
             this.bug.raised_at = new Date(this.bug.raised_at).toISOString(); 
 
             // Sending the data to the backend API

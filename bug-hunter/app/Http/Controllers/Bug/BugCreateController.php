@@ -43,7 +43,8 @@ class BugCreateController extends Controller
             $request->get('description'),
             new BugSeverityEnum($request->get('severity')),
             new BugStatusEnum($request->get('status')),
-            new DateTime($request->get('raised_at'))
+            new DateTime($request->get('raised_at')),
+            $request->get('solution')
         );
 
         $bug = $this->bugRepository->create($createDto, $category);

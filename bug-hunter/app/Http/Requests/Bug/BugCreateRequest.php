@@ -25,11 +25,12 @@ final class BugCreateRequest extends FormRequest
     {
         return [
             'title' => 'string|required',
-            'description' =>'array|nullable',
+            'description' =>'string|nullable',
             'severity' => ['string', 'required', Rule::in(BugSeverityEnum::values())],
             'status' =>['string', 'required', Rule::in(BugStatusEnum::values())],
             'raised_at' => 'date|required',
             'category' => 'nullable|int',
+            'solution' => 'nullable|string'
         ];
     }
 }
