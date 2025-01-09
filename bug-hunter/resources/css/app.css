@@ -5,11 +5,12 @@ body {
     margin: 0;
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
-    overflow-y: auto;
 }
 
 html, body {
-    overflow-y: auto;
+    overflow-y: scroll;
+    width: 100%;
+    /* padding: 0; */
 }
 
 .buttons {
