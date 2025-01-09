@@ -144,3 +144,18 @@ form select:focus {
 .sidebar ul li:hover {
     background-color: grey;
 }
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+    .main-content {
+        margin-left: 150px;
+    }
+}
