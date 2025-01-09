@@ -34,6 +34,10 @@
                 <input type="datetime-local" v-model="bug.raised_at" id="raised_at" required />
             </div>
 
+            <div>
+                <label for="solution">Solution</label>
+            </div>
+
             <!-- Submit Button -->
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
