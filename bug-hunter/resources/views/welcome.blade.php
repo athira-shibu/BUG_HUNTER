@@ -25,24 +25,26 @@
 
     </head>
     <body>
-        <div id="app">
-            <div>
-                <sidebar-component> />
-            </div>
-            <div class="center-component">
-                <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>
+        <div class="main-content">
+            <div id="app">
+                <div>
+                    <sidebar-component> />
+                </div>
+                <div class="center-component">
+                    <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>
 
-                <p id="demo"></p>
-                <!-- <layout-styles> -->
-                    <div id="bug-form" style="display:none">
-                        <bug-creation-form />
-                    </div>
+                    <p id="demo"></p>
+                    <!-- <layout-styles> -->
+                        <div id="bug-form" style="display:none">
+                            <bug-creation-form />
+                        </div>
+                </div>
+                <!-- Vue components rendered here -->
+                
+                <!-- </layout-styles> -->
+                <!-- <layout-styles /> -->
+                <footer-component />
             </div>
-            <!-- Vue components rendered here -->
-            
-            <!-- </layout-styles> -->
-            <!-- <layout-styles /> -->
-            <footer-component />
         </div>
         <script>
             function showForm() {
