@@ -200,3 +200,16 @@ form select:focus {
 .hero button:hover {
     background-color: darkgreen;
 }
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.stats div {
+    text-align: center;
+}
