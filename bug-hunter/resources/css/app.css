@@ -177,8 +177,11 @@ form select:focus {
 .hero {
     background: linear-gradient(120deg, #1f1f1f, #4f4f4f);
     color: white;
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .hero h1 {
