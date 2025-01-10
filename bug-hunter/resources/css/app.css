@@ -213,3 +213,12 @@ form select:focus {
 .stats div {
     text-align: center;
 }
+
+.stats h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stats p {
+    color: #555;
+}
