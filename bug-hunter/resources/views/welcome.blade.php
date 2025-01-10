@@ -39,6 +39,9 @@
                     <statistics-component />
                 </div>
                 <div>
+                    <recent-bugs-section />
+                </div>
+                <div>
                     <sidebar-component> />
                 </div>
                 <div class="center-component">
