@@ -5,7 +5,7 @@
             <img src="assets\images\company logo.png" alt="Company logo" />
          </div>
         <ul>
-            <li>Bugs</li>
+            <li><router-link to="/bug-list">Bugs</router-link></li>
             <li>Categories</li>
             <li>Members</li>
             <li>Get AI Help</li>
