@@ -3,7 +3,7 @@
         <div>
             <sidebar-component />
         </div>
-        <h2>Bug List</h2>
+        <h2 class="bug-list-heading">Bug List</h2>
 
         <!-- BUg list table -->
         <table>

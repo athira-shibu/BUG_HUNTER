@@ -273,3 +273,7 @@ tbody tr:nth-child(even) {
 td {
     word-wrap: break-word;
 }
+
+.bug-list-heading {
+   text-align: center;
+}
