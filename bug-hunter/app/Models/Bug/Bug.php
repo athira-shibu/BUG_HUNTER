@@ -29,7 +29,8 @@ class Bug extends Model
             'description' => $this->getAttribute('description'),
             'status' => $this->getAttribute('status'),
             'severity' => $this->getAttribute('severity'),
-            'raised_at' => $this->getAttribute('severity')
+            'raised_at' => $this->getAttribute('raised_at'),
+            'solution' => $this->getAttribute('solution')
         ];
     }
 }

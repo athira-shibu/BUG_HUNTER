@@ -26,6 +26,8 @@
                     <td>{{ bug.severity }}</td>
                     <td>{{ bug.status }}</td>
                     <td>{{ bug.raised_at }}</td>
+                    <!-- <td>{{ formatDate(bug.raised_at) }}</td> -->
+
                     <td>{{ bug.solution }}</td>
                     <td><button @click="editBug(bug.id)">Edit</button></td>
                     <td><button @click="deleteBug(bug.id)">Delete</button></td>
