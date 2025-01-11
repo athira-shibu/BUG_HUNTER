@@ -5,6 +5,9 @@
         <p>Your ultimate solution for managing bugs efficiently.</p>
         <button onclick="navigateToForm()">Get Started</button>
     </div>
+    <div class="center-component">
+        <button id="bug-button" type="button" class="buttons" onclick="navigateToBugCreation()">Report Bug</button>
+    </div>
     <div>
         <statistics-component />
      </div>

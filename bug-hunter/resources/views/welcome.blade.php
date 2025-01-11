@@ -28,21 +28,8 @@
         <div class="main-content">
             <div id="app">
                 <h1>is i am visible</h1>
-                <!-- <div class="center-component">
-                    <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>
-
-                    <p id="demo"></p>
-                        <div id="bug-form" style="display:none">
-                            <bug-creation-form />
-                        </div>
-                </div> -->
-
                 <footer-component />
             </div>
-        </div>
-        <div class="center-component">
-            <button id="bug-button" type="button" class="buttons" onclick="navigateToBugCreation()">Report Bug</button>
-
         </div>
         <script>
             function navigateToBugCreation() {
