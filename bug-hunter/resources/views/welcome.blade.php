@@ -34,7 +34,6 @@
         <script>
             function navigateToBugCreation() {
                 window.location.href = '/bug-creation';
-                document.getElementById('bug-button').style.display="none";
             }
         </script>
     </body>

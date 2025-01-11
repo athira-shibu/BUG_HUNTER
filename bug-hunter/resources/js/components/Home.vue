@@ -3,10 +3,7 @@
     <div id="intro" class="hero">
         <h1>Welcome to Bug Tracker</h1>
         <p>Your ultimate solution for managing bugs efficiently.</p>
-        <button onclick="navigateToForm()">Get Started</button>
-    </div>
-    <div class="center-component">
-        <button id="bug-button" type="button" class="buttons" onclick="navigateToBugCreation()">Report Bug</button>
+        <button type="button" class="buttons" onclick="navigateToBugCreation()">Report Bug</button>
     </div>
     <div>
         <statistics-component />
