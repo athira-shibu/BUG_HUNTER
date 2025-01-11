@@ -3,7 +3,7 @@
         <h2>Bug List</h2>
         <ul>
             <li v-for="bug in bugs" :key="bug.id">
-                {{ bug.name }} - {{ bug.status }}
+                {{ bug.title }} - {{ bug.status }}
             </li>
         </ul>
     </div>
@@ -13,7 +13,8 @@
 export default {
     data() {
         return {
-            bugs: []
+            bugs: [],
+            api: 'http://localhost:8000/api/bugs',
         };
     },
     mounted() {
@@ -27,6 +28,14 @@ export default {
             } catch (error) {
                 console.error("Error fetching bugs", error);
             }
+
+            this.axios.get(this.api, this.bug)
+                .then(res => {
+                    console.log('Bug listed successfully:', res.data);
+                })
+                .catch(error => {
+                    console.error('Error listing bugs:', error.response.data);
+                });
         }
     }
 }
