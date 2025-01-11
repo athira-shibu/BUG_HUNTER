@@ -27,8 +27,6 @@
     <body>
         <div class="main-content">
             <div id="app">
-                <h1>is i am visible</h1>
-                <footer-component />
             </div>
         </div>
         <script>
