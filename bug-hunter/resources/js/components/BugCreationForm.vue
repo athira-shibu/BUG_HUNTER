@@ -42,9 +42,6 @@
             <!-- Submit Button -->
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div class="card-body">
-            Journey to a full stack dev :-|.
-        </div>
     </div>
 </template>
 
