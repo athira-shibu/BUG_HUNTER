@@ -150,8 +150,8 @@ form select:focus {
 }
 
 .main-content {
-    margin-left: 200px;
-    padding: 20px;
+    margin-left: 100px;
+    padding: 0;
 }
 
 /* Responsive behavior for smaller screens */
