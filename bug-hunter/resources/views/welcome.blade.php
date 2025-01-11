@@ -33,6 +33,9 @@
             function navigateToBugCreation() {
                 window.location.href = '/bug-creation';
             }
+            function navigateToCategoryCreation() {
+                window.location.href = '/category-creation';
+            }
         </script>
     </body>
 </html>
