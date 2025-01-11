@@ -42,6 +42,10 @@
             <!-- Submit Button -->
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <!-- showing a success message -->
+        <div v-if="successMessage" class="success-message">
+            {{ successMessage }}
+        </div>
     </div>
 </template>
 
@@ -58,7 +62,8 @@ export default {
                 status: 'open', 
                 solution: ''  
             },
-            api: 'http://localhost:8000/api/bugs'
+            api: 'http://localhost:8000/api/bugs',
+            successMessage: ""
         };
     },
 
@@ -74,7 +79,14 @@ export default {
                 .catch(error => {
                     console.error('Error creating bug:', error.response.data);
                 });
-        }
-    }
+
+            setTimeout(() => {
+                this.successMessage = "Bug has been reported successfully.";
+            }, 500);
+            setTimeout(() => {
+                this.successMessage = ""
+            }, 3000)
+        },
+    },
 };
 </script>
