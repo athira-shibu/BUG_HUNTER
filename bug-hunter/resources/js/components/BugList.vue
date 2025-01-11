@@ -1,5 +1,8 @@
 <template>
     <div class="bug-list">
+        <div>
+            <sidebar-component />
+        </div>
         <h2>Bug List</h2>
         <ul>
             <li v-for="bug in bugs" :key="bug.id">

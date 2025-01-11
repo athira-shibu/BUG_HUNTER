@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div>
+            <sidebar-component />
+        </div>
         <p class="headings">Report your bug here....</p>
         <form @submit.prevent="submitForm">
             <!-- Title -->
