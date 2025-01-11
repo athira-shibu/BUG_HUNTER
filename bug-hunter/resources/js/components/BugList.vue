@@ -27,14 +27,16 @@
                     <td>{{ bug.status }}</td>
                     <td>{{ bug.raised_at }}</td>
                     <td>{{ bug.solution }}</td>
+                    <td><button @click="editBug(bug.id)">Edit</button></td>
+                    <td><button @click="deleteBug(bug.id)">Delete</button></td>
                 </tr>
             </tbody>
         </table>
-        <ul>
+        <!-- <ul>
             <li v-for="bug in bugs" :key="bug.id">
                 {{ bug.title }} - {{ bug.status }}
             </li>
-        </ul>
+        </ul> -->
     </div>
 </template>
 
@@ -65,6 +67,12 @@ export default {
                 .catch(error => {
                     console.error('Error listing bugs:', error.response.data);
                 });
+        },
+        editBug(id) {
+            console.log("Editing bug with id:", id);
+        },
+        deleteBug(id) {
+            console.log("Deleting bug with id:", id);
         }
     }
 }
