@@ -11,7 +11,7 @@ final class CategoryCreateControllerTest extends TestCase
 {
     use RefreshDatabase, ModelFactoryTrait;
 
-    private const URI = 'categories';
+    private const URI = 'api/categories';
 
     public function testCreateCategoryIsSuccessful(): void
     {
