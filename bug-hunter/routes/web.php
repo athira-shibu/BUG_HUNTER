@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\Bug\BugCreateController;
-use App\Http\Controllers\Category\CategoryCreateController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,20 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group([
-    'prefix' => 'categories',
-    'as' => 'categories.'
-], static function () {
-    Route::post('/', [CategoryCreateController::class, 'create']);
-});
-
-Route::group([
-    'prefix' => 'bugs',
-    'as' => 'bugs.'
-], static function () {
-    Route::post('/{id}', [BugCreateController::class, 'create']);
-});
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Catch-all route for the Vue.js app
+Route::get('/{any}', function () {
+    return view('welcome');  // Make sure this is the correct view
+})->where('any', '.*');
+
+

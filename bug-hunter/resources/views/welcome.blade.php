@@ -25,46 +25,29 @@
 
     </head>
     <body>
-        <!-- Hero section -->
-        <div id="intro" class="hero">
-            <h1>Welcome to Bug Tracker</h1>
-            <p>Your ultimate solution for managing bugs efficiently.</p>
-            <button onclick="navigateToForm()">Get Started</button>
-        </div>
-
         <div class="main-content">
             <div id="app">
-                <!-- Statistics section -->
-                <div>
-                    <statistics-component />
-                </div>
-                <div>
-                    <recent-bugs-section />
-                </div>
-                <div>
-                    <sidebar-component> />
-                </div>
-                <div class="center-component">
+                <h1>is i am visible</h1>
+                <!-- <div class="center-component">
                     <button id="bug-button" type="button" class="buttons" onclick="showForm()">Report Bug</button>
 
                     <p id="demo"></p>
-                    <!-- <layout-styles> -->
                         <div id="bug-form" style="display:none">
                             <bug-creation-form />
                         </div>
-                </div>
-                <!-- Vue components rendered here -->
-                
-                <!-- </layout-styles> -->
-                <!-- <layout-styles /> -->
+                </div> -->
+
                 <footer-component />
             </div>
         </div>
+        <div class="center-component">
+            <button id="bug-button" type="button" class="buttons" onclick="navigateToBugCreation()">Report Bug</button>
+
+        </div>
         <script>
-            function showForm() {
-                document.getElementById('bug-form').style.display="block";
+            function navigateToBugCreation() {
+                window.location.href = '/bug-creation';
                 document.getElementById('bug-button').style.display="none";
-                document.getElementById('intro').style.display="none";
             }
         </script>
     </body>
