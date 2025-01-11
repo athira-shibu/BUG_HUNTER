@@ -4,6 +4,32 @@
             <sidebar-component />
         </div>
         <h2>Bug List</h2>
+
+        <!-- BUg list table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Severity</th>
+                    <th>Status</th>
+                    <th>Raised at</th>
+                    <th>Solution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="bug in bugs" :key="bug.id">
+                    <td>{{ bug.id }}</td>
+                    <td>{{ bug.title }}</td>
+                    <td>{{ bug.description }}</td>
+                    <td>{{ bug.severity }}</td>
+                    <td>{{ bug.status }}</td>
+                    <td>{{ bug.raised_at }}</td>
+                    <td>{{ bug.solution }}</td>
+                </tr>
+            </tbody>
+        </table>
         <ul>
             <li v-for="bug in bugs" :key="bug.id">
                 {{ bug.title }} - {{ bug.status }}
