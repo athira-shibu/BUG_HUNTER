@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Bug\BugCreateController;
+use App\Http\Controllers\Bug\BugGetController;
 use App\Http\Controllers\Category\CategoryCreateController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,4 +33,5 @@ Route::group([
     'as' => 'bugs.'
 ], static function () {
     Route::post('/', [BugCreateController::class, 'create']);
+    Route::get('/', [BugGetController::class, 'getBugs']);
 });
