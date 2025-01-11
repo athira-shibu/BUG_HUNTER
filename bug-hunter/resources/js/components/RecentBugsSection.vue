@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="recent-bugs">
         <h2>Recent Bugs</h2>
         <ul>
         <li>⚠️ [High] Login page not loading - Jan 10, 2025</li>

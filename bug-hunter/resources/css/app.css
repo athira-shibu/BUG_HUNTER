@@ -222,3 +222,8 @@ form select:focus {
 .stats p {
     color: #555;
 }
+
+
+.recent-bugs {
+    padding: 100px;
+}
