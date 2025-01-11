@@ -20,7 +20,7 @@ class BugRepositoryTest extends TestCase
     {
         $createDto = new BugCreateDto(
             'name space issue',
-            ['some random description'],
+            'some random description',
             BugSeverityEnum::CRITICAL(),
             BugStatusEnum::OPEN(),
             new DateTime('2023-10-10T10:10:00Z')
@@ -38,5 +38,25 @@ class BugRepositoryTest extends TestCase
             'severity' => 'critical',
             'status' => 'open'
         ]);
+    }
+
+    public function testBugGetIsSuccessful(): void
+    {
+        $category = $this->createCategory();
+        $bug1 = $this->createBug($category);
+        $bug2 = $this->createBug($category);
+        $bug3 = $this->createBug($category);
+
+        $repository = new BugRepository();
+
+        $result = $repository->getBugs();
+
+        $expected = [
+            $bug1->toArray(),
+            $bug2->toArray(),
+            $bug3->toArray()
+        ];
+
+        self::assertEquals($expected, $result->toArray());
     }
 }

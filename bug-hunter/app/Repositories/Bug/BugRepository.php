@@ -7,6 +7,7 @@ use App\DataTransferObjects\Bug\BugCreateDto;
 use App\Models\Bug\Bug;
 use App\Models\Category\Category;
 use App\Repositories\Interfaces\Bug\BugRepositoryInterface;
+use Illuminate\Support\Collection;
 
 final class BugRepository implements BugRepositoryInterface
 {
@@ -26,5 +27,11 @@ final class BugRepository implements BugRepositoryInterface
         $bug->save();
 
         return $bug;
+    }
+
+    public function getBugs(): Collection
+    {
+        return (new Bug())
+            ->get();
     }
 }
