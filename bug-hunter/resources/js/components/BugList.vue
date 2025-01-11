@@ -9,7 +9,6 @@
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Title</th>
                     <th>Description</th>
                     <th>Severity</th>
@@ -20,7 +19,6 @@
             </thead>
             <tbody>
                 <tr v-for="bug in bugs" :key="bug.id">
-                    <td>{{ bug.id }}</td>
                     <td>{{ bug.title }}</td>
                     <td>{{ bug.description }}</td>
                     <td>{{ bug.severity }}</td>
@@ -34,11 +32,6 @@
                 </tr>
             </tbody>
         </table>
-        <!-- <ul>
-            <li v-for="bug in bugs" :key="bug.id">
-                {{ bug.title }} - {{ bug.status }}
-            </li>
-        </ul> -->
     </div>
 </template>
 
