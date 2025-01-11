@@ -17,6 +17,7 @@
      <div>
         <footer-component />
     </div>
+    <br><br><br>
   </template>
   
   <script>
