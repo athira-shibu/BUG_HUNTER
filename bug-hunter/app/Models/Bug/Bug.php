@@ -30,7 +30,8 @@ class Bug extends Model
             'status' => $this->getAttribute('status'),
             'severity' => $this->getAttribute('severity'),
             'raised_at' => $this->getAttribute('raised_at'),
-            'solution' => $this->getAttribute('solution')
+            'solution' => $this->getAttribute('solution'),
+            'categories' => $this->getCategory()->toArray()
         ];
     }
 }

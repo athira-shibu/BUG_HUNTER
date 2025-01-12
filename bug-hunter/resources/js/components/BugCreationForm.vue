@@ -14,6 +14,16 @@
                 <label for="description">Description</label>
                 <textarea v-model="bug.description" id="description" required></textarea>
             </div>
+            <!-- Category -->
+            <div>
+                <label for="category">Category</label>
+                <select v-model="bug.category_id" id="category" required>
+                    <option v-for="category in categories" :key="category.id" :value="category.id">
+                        {{ category.name }} test data
+                    </option>
+                </select>
+            </div>
+
             <!-- Severity -->
             <div>
                 <label for="severity">Severity</label>
@@ -53,29 +63,47 @@
 </template>
 
 <script>
+import { values } from 'lodash';
+
 export default {
     data() {
         return {
             bug: {
                 title: '',
                 description: '',  
-                category: 1,
+                category_id: '',
                 raised_at: '',
                 severity: 'high',  
                 status: 'open', 
                 solution: ''  
             },
-            api: 'http://localhost:8000/api/bugs',
+            categories: [],
+            api: {
+                bugs: 'http://localhost:8000/api/bugs',
+                categories: 'http://localhost:8000/api/categories',
+            },
             successMessage: ""
         };
     },
-
+    mounted() {
+        this.fetchCategories();
+    },
     methods: {
+        fetchCategories() {
+            this.axios.get(this.api.categories)
+            .then(res => {
+                console.log('Category fetched successfully:', res.data);
+                this.categories = res.data;
+            })
+            .catch(error => {
+                console.log("Error in fetching categories:", error.res.data);
+            });
+        },
         submitForm() {
             this.bug.raised_at = new Date(this.bug.raised_at).toISOString(); 
 
             // Sending the data to the backend API
-            this.axios.post(this.api, this.bug)
+            this.axios.post(this.api.bugs, this.bug)
                 .then(res => {
                     console.log('Bug created successfully:', res.data);
                 })
