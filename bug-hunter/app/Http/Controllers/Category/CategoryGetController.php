@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Category;
 use App\Http\Controllers\Controller;
 use App\Repositories\Interfaces\Category\CategoryRepositoryInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 final class CategoryGetController extends Controller
 {
@@ -19,6 +20,8 @@ final class CategoryGetController extends Controller
 
     public function getCategories(): JsonResponse
     {
-        return new JsonResponse();
+        $categories = $this->categoryRepository->getCategory();
+
+        return new JsonResponse($categories->toArray(), Response::HTTP_OK);
     }
 }
