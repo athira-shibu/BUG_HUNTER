@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Repositories\Bug;
 
 use App\DataTransferObjects\Bug\BugCreateDto;
+use App\DataTransferObjects\Bug\BugUpdateDto;
 use App\Models\Bug\Bug;
 use App\Models\Category\Category;
 use App\Repositories\Interfaces\Bug\BugRepositoryInterface;
@@ -42,8 +43,21 @@ final class BugRepository implements BugRepositoryInterface
             ->first();
     }
 
-    public function update(Bug $bug): Bug
+    public function update(Bug $bug, BugUpdateDto $updateDto, ?Category $category): Bug
     {
-        $bug->setAttribute('title',)
+        $bug->setAttribute('title', $updateDto->getTitle());
+        $bug->setAttribute('description', $updateDto->getDescription());
+        $bug->setAttribute('severity', $updateDto->getSeverity()->getValue());
+        $bug->setAttribute('status', $updateDto->getStatus()->getValue());
+        $bug->setAttribute('raised_at', $updateDto->getRaisedAt());
+        $bug->setAttribute('solution', $updateDto->getSolution());
+
+        if ($category !== null) {
+            $bug->category()->associate($category);
+        }
+
+        $bug->save();
+
+        return $bug;
     }
 }
