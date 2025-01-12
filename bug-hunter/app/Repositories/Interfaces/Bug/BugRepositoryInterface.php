@@ -15,4 +15,6 @@ interface BugRepositoryInterface
     public function getBugs(): Collection;
 
     public function findOneById(string $id): ?Bug;
+
+    public function update(Bug $bug): Bug;
 }

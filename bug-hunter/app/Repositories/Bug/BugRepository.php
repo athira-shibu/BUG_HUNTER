@@ -41,4 +41,9 @@ final class BugRepository implements BugRepositoryInterface
             ->where('id', '=', $id)
             ->first();
     }
+
+    public function update(Bug $bug): Bug
+    {
+        $bug->setAttribute('title',)
+    }
 }

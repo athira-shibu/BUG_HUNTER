@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Bug;
 
+use App\Exceptions\Bug\BugNotFoundException;
 use App\Http\Controllers\Controller;
 use App\Models\Bug\Bug;
 use App\Repositories\Interfaces\Bug\BugRepositoryInterface;
@@ -23,7 +24,9 @@ class BugUpdateController extends Controller
         $bug = $this->bugRepository->findOneById($id);
 
         if ($bug instanceof Bug === false) {
-            throw new Bug
+            throw new BugNotFoundException(\sprintf('Bug not found with id-%s', $id));
         }
+
+        $bug
     }
 }
