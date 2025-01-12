@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Bug;
 
 use App\Http\Controllers\Controller;
+use App\Models\Bug\Bug;
 use App\Repositories\Interfaces\Bug\BugRepositoryInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
@@ -19,6 +20,10 @@ class BugUpdateController extends Controller
 
     public function update(string $id): JsonResponse
     {
-        $bug = $this->bugRepository->
+        $bug = $this->bugRepository->findOneById($id);
+
+        if ($bug instanceof Bug === false) {
+            throw new Bug
+        }
     }
 }
