@@ -43,7 +43,7 @@ final class BugRepository implements BugRepositoryInterface
             ->first();
     }
 
-    public function update(Bug $bug, BugUpdateDto $updateDto, ?Category $category): Bug
+    public function update(Bug $bug, BugUpdateDto $updateDto, ?Category $category = null): Bug
     {
         $bug->setAttribute('title', $updateDto->getTitle());
         $bug->setAttribute('description', $updateDto->getDescription());

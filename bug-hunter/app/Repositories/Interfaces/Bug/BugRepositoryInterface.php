@@ -17,5 +17,5 @@ interface BugRepositoryInterface
 
     public function findOneById(string $id): ?Bug;
 
-    public function update(Bug $bug, BugUpdateDto $updateDto, ?Category $category): Bug;
+    public function update(Bug $bug, BugUpdateDto $updateDto, ?Category $category = null): Bug;
 }
