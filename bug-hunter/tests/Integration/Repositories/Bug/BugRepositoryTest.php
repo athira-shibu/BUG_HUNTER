@@ -59,4 +59,18 @@ class BugRepositoryTest extends TestCase
 
         self::assertEquals($expected, $result->toArray());
     }
+
+    public function testFindOneByIdIsSuccessful(): void
+    {
+        $category = $this->createCategory();
+        $bug = $this->createBug($category);
+
+        $repository = new BugRepository();
+
+        $result = $repository->findOneById($bug->getAttribute('id'));
+
+        $expected = $bug->toArray();
+
+        self::assertEquals($expected, $result->toArray());
+    }
 }

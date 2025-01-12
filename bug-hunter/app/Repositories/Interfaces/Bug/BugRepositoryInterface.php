@@ -13,4 +13,6 @@ interface BugRepositoryInterface
     public function create(BugCreateDto $createDto, Category $category): Bug;
 
     public function getBugs(): Collection;
+
+    public function findOneById(string $id): ?Bug;
 }

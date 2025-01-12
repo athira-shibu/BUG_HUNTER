@@ -19,7 +19,7 @@
                 <label for="category">Category</label>
                 <select v-model="bug.category_id" id="category" required>
                     <option v-for="category in categories" :key="category.id" :value="category.id">
-                        {{ category.name }} test data
+                        {{ category.name }}
                     </option>
                 </select>
             </div>

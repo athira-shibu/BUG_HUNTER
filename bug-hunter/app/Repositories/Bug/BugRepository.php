@@ -34,4 +34,11 @@ final class BugRepository implements BugRepositoryInterface
         return (new Bug())
             ->get();
     }
+
+    public function findOneById(string $id): ?Bug
+    {
+        return (new Bug())
+            ->where('id', '=', $id)
+            ->first();
+    }
 }
