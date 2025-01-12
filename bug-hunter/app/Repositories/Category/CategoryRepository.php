@@ -5,6 +5,7 @@ namespace App\Repositories\Category;
 
 use App\Models\Category\Category;
 use App\Repositories\Interfaces\Category\CategoryRepositoryInterface;
+use Illuminate\Support\Collection;
 
 final class CategoryRepository implements CategoryRepositoryInterface
 {
@@ -23,5 +24,11 @@ final class CategoryRepository implements CategoryRepositoryInterface
         return (new Category())
             ->where('id', '=', $id)
             ->first();
+    }
+
+    public function getCategory(): Collection
+    {
+        return (new Category())
+            ->get();
     }
 }

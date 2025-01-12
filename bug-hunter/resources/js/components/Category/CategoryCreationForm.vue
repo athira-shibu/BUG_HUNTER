@@ -24,5 +24,16 @@ export default {
             successMessage: ""
         };
     },
+    methods: {
+        submitForm() {
+            this.axios.post(this.api, this.category)
+            .then(res => {
+                console.log('Category created successfully:', res.data);
+            })
+            .catch(error => {
+                console.error('Error creating category:', error.res.data);
+            });
+        }
+    }
 }
 </script>
