@@ -6,7 +6,7 @@
          </div>
         <ul>
             <li><router-link to="/bug-list">Bugs</router-link></li>
-            <li>Categories</li>
+            <li><router-link to="/category-list">Categories</router-link></li>
             <li>Members</li>
             <li>Get AI Help</li>
             <li>Analysis</li>

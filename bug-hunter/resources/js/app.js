@@ -14,6 +14,8 @@ import StatisticsComponent from './components/StatisticsComponent.vue';
 import RecentBugsSection from './components/RecentBugsSection.vue';
 import Home from './components/Home.vue';
 import CategoryCreationForm from './components/Category/CategoryCreationForm.vue';
+import CategoryList from './components/Category/CategoryList.vue';
+import BugList from './components/BugList.vue';
 
 const app = createApp(App);
 
@@ -26,7 +28,9 @@ app.component('statistics-component', StatisticsComponent);
 app.component('recent-bugs-section', RecentBugsSection);
 app.component('home', Home);
 app.component('app', App);
+app.component('bug-list', BugList);
 app.component('category-creation-form', CategoryCreationForm);
+app.component('category-list', CategoryList);
 
 // Use Plugins
 app.use(router);
