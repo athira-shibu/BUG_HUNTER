@@ -3,6 +3,8 @@
         <div>
             <sidebar-component />
         </div>
+        <button type="button" class="buttons category-create-button" onclick="navigateToCategoryCreation()">Create Category</button>
+
         <h2 class="bug-list-heading">Category List</h2>
         <!-- Category List table -->
          <table>

@@ -4,7 +4,6 @@
         <h1>Welcome to Bug Tracker</h1>
         <p>Your ultimate solution for managing bugs efficiently.</p>
         <button type="button" class="buttons" onclick="navigateToBugCreation()">Report Bug</button>
-        <button type="button" class="buttons" onclick="navigateToCategoryCreation()">Create Category</button>
     </div>
     <div>
         <statistics-component />
