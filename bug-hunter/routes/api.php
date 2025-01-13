@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Bug\BugCreateController;
+use App\Http\Controllers\Bug\BugFindController;
 use App\Http\Controllers\Bug\BugGetController;
 use App\Http\Controllers\Bug\BugUpdateController;
 use App\Http\Controllers\Category\CategoryCreateController;
@@ -38,4 +39,5 @@ Route::group([
     Route::post('/', [BugCreateController::class, 'create']);
     Route::get('/', [BugGetController::class, 'getBugs']);
     Route::put('/{id}', [BugUpdateController::class, 'update']);
+    // Route::get('/{id}', [BugFindController::class, 'find']);
 });

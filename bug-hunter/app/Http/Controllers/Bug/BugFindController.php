@@ -22,8 +22,9 @@ final class BugFindController extends Controller
 
     public function find(string $id): JsonResponse
     {
+        dd($id);
         $bug = $this->bugRepository->findOneById($id);
-
+// dd($bug);
         if ($bug instanceof Bug === false) {
             throw new BugNotFoundException(\sprintf('Bug for id - %s not found.', $id));
         }
