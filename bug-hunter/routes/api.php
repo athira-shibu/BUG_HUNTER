@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Bug\BugCreateController;
 use App\Http\Controllers\Bug\BugGetController;
+use App\Http\Controllers\Bug\BugUpdateController;
 use App\Http\Controllers\Category\CategoryCreateController;
 use App\Http\Controllers\Category\CategoryGetController;
 use Illuminate\Http\Request;
@@ -36,4 +37,5 @@ Route::group([
 ], static function () {
     Route::post('/', [BugCreateController::class, 'create']);
     Route::get('/', [BugGetController::class, 'getBugs']);
+    Route::put('/{id}', [BugUpdateController::class, 'update']);
 });
