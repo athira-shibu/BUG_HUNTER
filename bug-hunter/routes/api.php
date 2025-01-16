@@ -39,5 +39,5 @@ Route::group([
     Route::post('/', [BugCreateController::class, 'create']);
     Route::get('/', [BugGetController::class, 'getBugs']);
     Route::put('/{id}', [BugUpdateController::class, 'update']);
-    // Route::get('/{id}', [BugFindController::class, 'find']);
+    Route::get('/{id}', [BugFindController::class, 'find']);
 });
