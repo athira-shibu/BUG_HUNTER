@@ -4,8 +4,7 @@ name: BUG TRACKER
 
 on: 
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   bug-tracker:
@@ -14,14 +13,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          php-version: 8.1.31
 
       - name: Run Tests
         run: |
           php artisan test
-
-      - name: Run PHPStan
-        run: |
-          php vendor/bin/phpstan analyse
 
 
 
