@@ -7,6 +7,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use Tests\Traits\ModelFactoryTrait;
 
+/**
+ * @covers \App\Http\Controllers\Bug\BugGetController
+ */
 final class BugGetControllerTest extends TestCase
 {
     use RefreshDatabase, ModelFactoryTrait;
