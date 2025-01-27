@@ -17,6 +17,7 @@ return new class extends Migration
     {
         Schema::create(self::TABLE, static function (Blueprint $table): void {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }
