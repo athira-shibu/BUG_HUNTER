@@ -131,7 +131,7 @@ form select:focus {
 
 .sidebar {
     width: 200px;
-    background-color: black;
+    background-color: #172B4D;;
     color: white;
     height: 100vh;
     position: fixed;
@@ -157,7 +157,7 @@ form select:focus {
 }
 
 .sidebar ul li:hover {
-    background-color: grey;
+    background-color: black;
 }
 
 .main-content {
@@ -181,7 +181,7 @@ form select:focus {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 25px;
     border-radius: 10px;
 }
 

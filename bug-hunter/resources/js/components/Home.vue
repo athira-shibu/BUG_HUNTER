@@ -1,5 +1,8 @@
 <template>
     <!-- Hero section -->
+    <div>
+        <nav-bar />
+    </div>
     <div id="intro" class="hero">
         <h1>Welcome to Bug Tracker</h1>
         <p>Your ultimate solution for managing bugs efficiently.</p>

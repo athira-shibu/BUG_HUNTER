@@ -16,6 +16,7 @@ import Home from './components/Home.vue';
 import CategoryCreationForm from './components/Category/CategoryCreationForm.vue';
 import CategoryList from './components/Category/CategoryList.vue';
 import BugList from './components/BugList.vue';
+import NavbarComponent from './components/MainComponents/NavbarComponent.vue';
 
 const app = createApp(App);
 
@@ -31,6 +32,7 @@ app.component('app', App);
 app.component('bug-list', BugList);
 app.component('category-creation-form', CategoryCreationForm);
 app.component('category-list', CategoryList);
+app.component('nav-bar', NavbarComponent);
 
 // Use Plugins
 app.use(router);
