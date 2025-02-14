@@ -1,11 +1,21 @@
-body {
+/* body {
     background-color: white;
     color: #333333;
     padding: 0;
     margin: 0;
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
+} */
+
+body {
+    background-color: #F4F5F7; /* Light gray background */
+    color: #172B4D; /* Dark blue-gray text */
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Jira uses a modern sans-serif font */
+    font-size: 16px;
 }
+
 
 html, body {
     overflow-y: scroll;
