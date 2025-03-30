@@ -1,0 +1,11 @@
+Issue 1: PENDING
+$ npx tailwindcss init -p
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\athir\AppData\Local\npm-cache\_logs\2025-03-30T12_32_19_311Z-debug-0.log
+
+Solution : Tailwind installation issues caused these issues.
+   https://www.reddit.com/r/reactjs/comments/1i8xv4a/cant_install_tailwindcss_anymore/
+
+   the init in v4 was removed
+   Tailwind css installation guide:
+   https://tailwindcss.com/docs/installation/using-vite
