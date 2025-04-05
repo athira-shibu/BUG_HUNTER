@@ -1,0 +1,4 @@
+step 1: install laravel globally
+        composer global require laravel/installer
+step 2: create the laravel project
+        laravel new bug-tracker
