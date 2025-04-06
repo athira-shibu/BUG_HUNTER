@@ -2,4 +2,11 @@ npm init vite vue
 
 vite 6.3.1
 
+npm install
+npm run dev
+npm install -S vuex@next
+
+Defined store :
+vue/src/store
+
 
