@@ -1,17 +1,8 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import { mapState } from 'vuex';
-
-
-export default {
-    computed: {
-        ...mapState(['user'])
-    }
-}
 </script>
 
 <template>
-    <pre>{{ user }}</pre>
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -34,6 +25,6 @@ export default {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+  filter: drop-shadow(0 0 2em #75b842aa);
 }
 </style>

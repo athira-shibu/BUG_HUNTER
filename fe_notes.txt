@@ -9,4 +9,6 @@ npm install -S vuex@next
 Defined store :
 vue/src/store
 
+install tailwind css
+npm install -D tailwindcss@^3 postcss autoprefixer : i removed the upper version of 3 since tailwind 4 have some issues
 
