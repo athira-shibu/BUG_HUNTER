@@ -3,7 +3,7 @@ import NavBar from './components/NavBar.vue'
 </script>
 
 <template>
-    <div class="pt-20">
+    <div class="pt-20 bg-blue">
         <NavBar />
     </div>
 </template>
