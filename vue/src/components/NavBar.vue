@@ -21,7 +21,7 @@ export default {
         <div class="flex items-center space-x-6">
             <!-- Logo -->
             <div class="flex items-center space-x-2">
-                <img src="https://media.istockphoto.com/id/2185236359/photo/mid-aged-man-comfortably-working-at-home-sitting-on-the-floor-with-his-beagle-dog-by-his-side.jpg?s=1024x1024&w=is&k=20&c=4CGVlTotOQLureX_m2A8fRiSvEimpomhP2NZBgpuFuA=" alt="BUG HUNTER" class="h-8 w-8" />
+                <!-- <img src="https://media.istockphoto.com/id/2185236359/photo/mid-aged-man-comfortably-working-at-home-sitting-on-the-floor-with-his-beagle-dog-by-his-side.jpg?s=1024x1024&w=is&k=20&c=4CGVlTotOQLureX_m2A8fRiSvEimpomhP2NZBgpuFuA=" alt="BUG HUNTER" class="h-8 w-8" /> -->
                 <span class="text-lg font-semibold">Bug Hunter</span>
             </div>
             <!-- Tabs -->
@@ -34,13 +34,13 @@ export default {
         </div>
         <!-- Right: Icons (You can replace these with actual icons later) -->
         <div class="flex items-center space-x-4 text-gray-300">
+            <!-- <button class="hover:text-white">🔎</button>
             <button class="hover:text-white">🔎</button>
-            <button class="hover:text-white">🔎</button>
-            <button class="hover:text-white">🔎</button>
+            <button class="hover:text-white">🔎</button> -->
         </div>
         <div class="relative" @click="toggleMenu">
             <img
-                src="https://avatars.githubusercontent.com/u/9919?s=40&v=4"
+                src="https://media.istockphoto.com/id/2185236359/photo/mid-aged-man-comfortably-working-at-home-sitting-on-the-floor-with-his-beagle-dog-by-his-side.jpg?s=1024x1024&w=is&k=20&c=4CGVlTotOQLureX_m2A8fRiSvEimpomhP2NZBgpuFuA="
                 alt="User Avatar"
                 class="w-8 h-8 rounded-full cursor-pointer"
                 />
