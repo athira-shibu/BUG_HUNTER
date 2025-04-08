@@ -47,6 +47,7 @@ export default {
             <div v-if="showMenu"
                 class="absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg z-50">
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Your Profile</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Organization</a>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign out</a>
             </div>
