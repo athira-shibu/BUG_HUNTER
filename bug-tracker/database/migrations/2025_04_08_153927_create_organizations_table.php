@@ -1,10 +1,11 @@
 <?php
+declare(strict_types = 1);
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class createOrganizationsTable extends Migration
 {
     private const TABLE = 'organizations';
 
@@ -18,6 +19,7 @@ return new class extends Migration
             $table->string('external_id')->unique();
             $table->string('name');
             $table->string('phone_number');
+            $table->string('logo')->nullable();
             $table->string('subscription_status')->nullable();
             $table->timestamps();
         });
