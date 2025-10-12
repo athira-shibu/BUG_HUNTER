@@ -1,0 +1,20 @@
+php -S localhost:8000 -t public to run the server
+
+Since BUG TRACKER is designed to help software developers i am aiming to build web view, desktop view and also mobile app. Each Organization is an isolated organization. Each organization can have multiple Users. And user's can have roles and permissions and access levels and also can have multiple roles (for start up companies software developers usually takes over multiple roles, ie, Admin, Developer, QA) and each user is assigned to teams and possibly there might be user's that is not assigned to any teams. And a single user in a Organization can be added to multiple teams.
+
+organization
+user
+roles
+permission
+team
+project
+tickets
+statuses
+comments
+Planning to BUG TRACKER as Cross Platform
+
+1. Web App ()
+    Laravel + Blade (or Vue later if needed)
+    Mobile App (Flutter)
+    Desktop App (packaged Flutter or Tauri build hitting same API's)
+Organization
