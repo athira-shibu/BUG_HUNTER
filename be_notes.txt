@@ -1,8 +1,0 @@
-step 1: install laravel globally
-        composer global require laravel/installer
-step 2: create the laravel project
-        laravel new bug-tracker
-step 3: create database
-step 4: add database in env
-step 5: migrate
-        php artisan migrate
